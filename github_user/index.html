@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="back">
+<div class="box">
+    <form id="github-form">
+        <input type="text" id="username" placeholder="GitHub user ?" required />
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="result" class="container" style="display: none;">
+        <img id="avatar" class="avatar" alt="Avatar de l'utilisateur" />
+        <h2 id="user-name"></h2>
+        <p id="creation-date"></p>
+        <p id="public-repos"></p>
+        <button id="profile-button" class="btn">Voir</button>
+    </div>
+</div>
+
+    <p id="error" class="error"></p>
+
+</div>
+
+    
+</body>
+<script type="module" src="./main.js"></script>
+</html>
